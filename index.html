@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadro de asistencia</title>
+    <style>
+        .estudianteuch {
+            background-color: royalblue;
+            height: 15vh;
+            margin-bottom: 5px;
+            color: rgb(0, 0, 0);
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+            color: aliceblue;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 0 auto;
+        }
+        th {
+            background-color: skyblue;
+        }
+        th, td, input, textarea {
+            font-family: sans-serif;
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+        input, textarea, select {
+            border-radius: 10%;
+        }
+        textarea {
+            width: 150px;
+            resize: horizontal;
+            text-align: center;
+        }
+        td {
+            border-bottom: 2px solid gray;
+            padding: 5px;
+            color: grey;
+        }
+        input {
+            width: 80%;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="estudianteuch">
+        <h1>Estudiantes de de la UCH</h1>
+    </div>
+    <div class="Tablaocuadro">
+        <table>
+            <tr>
+                <th>Numero</th>
+                <th>Foto</th>
+                <th>Alumno</th>
+                <th>Apellidos y Nombres</th>
+                <th>Programa de estudio</th>
+                <th>Mod.</th>
+                <th>Met.</th>
+                <th>Celular</th>
+                <th>Correo</th>
+                <th>asistencia</th>
+                <th>Observación</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <th>
+                    <form>
+                        <input type="text" placeholder="Buscar">
+                    </form>
+                </th>
+                <th>
+                    <form>
+                        <input type="text" placeholder="Buscar">
+                    </form>
+                </th>
+                <th>
+                    <form>
+                        <input type="text" placeholder="Buscar">
+                    </form>
+                </th>
+                <th>
+                    <form>
+                        <input type="text" placeholder="Buscar">
+                    </form>
+                </th>
+                <th>
+                    <form>
+                        <input type="text" placeholder="Buscar">
+                    </form>
+                </th>
+                <th>
+                    <form>
+                        <input type="text" placeholder="Buscar">
+                    </form>
+                </th>
+                <th>
+                    <form>
+                        <input type="text" placeholder="Buscar">
+                    </form>
+                </th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><img src="img/photoman.png" style="width: 80px;"></td>
+                <td>23101145</td>
+                <td>HUACCANI FLORES JEREMY ADRIAN</td>
+                <td>INGENIERIA DE SISTEMAS E INFORMATICA</td>
+                <td>P</td>
+                <td>P</td>
+                <td>967345266</td>
+                <td>jeremy@gmail.com</td>
+                <td>
+                    <select class="Opciones">
+                        <option value="Seleccionar" disabled selected>Seleccionar</option>
+                        <option value="Asistencia">Asistencia</option>
+                        <option value="Inasistencia">Inasistencia</option>
+                        <option value="Tardanza">Tardanza</option>
+                        <option value="Falto">Falto</option>
+                    </select>
+                </td>
+                <td>
+                    <textarea class="Observaciones" rows ="3" placeholder = "Observaciones"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><img src="img/photowhoman.png" style="width: 80px;"></td>
+                <td>23678123</td>
+                <td>MARIA FERNANDA TORRES DIAZ</td>
+                <td>INGENIERIA DE SISTEMAS E INFORMATICA</td>
+                <td>P</td>
+                <td>P</td>
+                <td>942649678</td>
+                <td>mariafert@gmail.com</td>
+                <td>
+                    <select class="Opciones">
+                        <option value="Seleccionar" disabled selected>Seleccionar</option>
+                        <option value="Asistencia">Asistencia</option>
+                        <option value="Inasistencia">Inasistencia</option>
+                        <option value="Tardanza">Tardanza</option>
+                        <option value="Falto">Falto</option>
+                    </select>
+                </td>
+                <td>
+                    <textarea class="Observaciones" rows ="3" placeholder = "Observaciones"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><img src="img/photoman.png" style="width: 80px;"></td>
+                <td>23234789</td>
+                <td>JUAN CARLOS RAMOS FLORES</td>
+                <td>INGENIERIA DE SISTEMAS E INFORMATICA</td>
+                <td>P</td>
+                <td>P</td>
+                <td>900123678</td>
+                <td>juancarfl@gmail.com</td>
+                <td>
+                    <select class="Opciones">
+                        <option value="Seleccionar" disabled selected>Seleccionar</option>
+                        <option value="Asistencia">Asistencia</option>
+                        <option value="Inasistencia">Inasistencia</option>
+                        <option value="Tardanza">Tardanza</option>
+                        <option value="Falto">Falto</option>
+                    </select>
+                </td>
+                <td>
+                    <textarea class="Observaciones" rows ="3" placeholder = "Observaciones"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><img src="img/photowhoman.png" style="width: 80px;"></td>
+                <td>23489167</td>
+                <td>ANA PAULA GONZÁLEZ CHÁVEZ</td>
+                <td>INGENIERIA DE SISTEMAS E INFORMATICA</td>
+                <td>P</td>
+                <td>P</td>
+                <td>911564356</td>
+                <td>anapaugon@gmail.com</td>
+                <td>
+                    <select class= "Opciones">
+                        <option value="Seleccionar" disabled selected>Seleccionar</option>
+                        <option value="Asistencia">Asistencia</option>
+                        <option value="Inasistencia">Inasistencia</option>
+                        <option value="Tardanza">Tardanza</option>
+                        <option value="Falto">Falto</option>
+                    </select>
+                </td>
+                <td>
+                    <textarea class="Observaciones" rows ="3" placeholder = "Observaciones"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><img src="img/photowhoman.png" style="width: 80px;"></td>
+                <td>23911566</td>
+                <td>KARLA SOFÍA MENDOZA LÓPEZ</td>
+                <td>INGENIERIA DE SISTEMAS E INFORMATICA</td>
+                <td>P</td>
+                <td>P</td>
+                <td>999444555</td>
+                <td>sofimendoza@gmail.com</td>
+                <td>
+                    <select class="Opciones">
+                        <option value="Seleccionar" disabled selected>Seleccionar</option>
+                        <option value="Asistencia">Asistencia</option>
+                        <option value="Inasistencia">Inasistencia</option>
+                        <option value="Tardanza">Tardanza</option>
+                        <option value="Falto">Falto</option>
+                    </select>
+                </td>
+                <td>
+                    <textarea class="Observaciones" rows ="3" placeholder = "Observaciones"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td><img src="img/photoman.png" style="width: 80px;"></td>
+                <td>23001229</td>
+                <td>MARCO ANTONIO VARGAZ SOTO</td>
+                <td>INGENIERIA DE SISTEMAS E INFORMATICA</td>
+                <td>P</td>
+                <td>P</td>
+                <td>987789005</td>
+                <td>marcosoto@gmail.com</td>
+                <td>
+                    <select class="Opciones">
+                        <option value="Seleccionar" disabled selected>Seleccionar</option>
+                        <option value="Asistencia">Asistencia</option>
+                        <option value="Inasistencia">Inasistencia</option>
+                        <option value="Tardanza">Tardanza</option>
+                        <option value="Falto">Falto</option>
+                    </select>
+                </td>
+                <td>
+                    <textarea class="Observaciones" rows ="3" placeholder = "Observaciones"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td><img src="img/photowhoman.png" style="width: 80px;"></td>
+                <td>23194222</td>
+                <td>ROSA AMELIA QUISPE GARCÍA</td>
+                <td>INGENIERIA DE SISTEMAS E INFORMATICA</td>
+                <td>P</td>
+                <td>P</td>
+                <td>921221338</td>
+                <td>rosamelia@gmail.com</td>
+                <td>
+                    <select class="Opciones">
+                        <option value="Seleccionar" disabled selected>Seleccionar</option>
+                        <option value="Asistencia">Asistencia</option>
+                        <option value="Inasistencia">Inasistencia</option>
+                        <option value="Tardanza">Tardanza</option>
+                        <option value="Falto">Falto</option>
+                    </select>
+                </td>
+                <td>
+                    <textarea class="Observaciones" rows ="3" placeholder = "Observaciones"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td><img src="img/photoman.png" style="width: 80px;"></td>
+                <td>23444555</td>
+                <td>PEDRO JOSÉ SILVA HUAMAN</td>
+                <td>INGENIERIA DE SISTEMAS E INFORMATICA</td>
+                <td>P</td>
+                <td>P</td>
+                <td>963164999</td>
+                <td>josesilva@gmail.com</td>
+                <td>
+                    <select class="Opciones">
+                        <option value="Seleccionar" disabled selected>Seleccionar</option>
+                        <option value="Asistencia">Asistencia</option>
+                        <option value="Inasistencia">Inasistencia</option>
+                        <option value="Tardanza">Tardanza</option>
+                        <option value="Falto">Falto</option>
+                    </select>
+                </td>
+                <td>
+                    <textarea class="Observaciones" rows ="3" placeholder = "Observaciones"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td><img src="img/photoman.png" style="width: 80px;"></td>
+                <td>23666777</td>
+                <td>JAVIER ALEJANDRO MEDINA ALVARADO</td>
+                <td>INGENIERIA DE SISTEMAS E INFORMATICA</td>
+                <td>P</td>
+                <td>P</td>
+                <td>999888123</td>
+                <td>javiermedina@gmail.com</td>
+                <td>
+                    <select class="Opciones">
+                        <option value="Seleccionar" disabled selected>Seleccionar</option>
+                        <option value="Asistencia">Asistencia</option>
+                        <option value="Inasistencia">Inasistencia</option>
+                        <option value="Tardanza">Tardanza</option>
+                        <option value="Falto">Falto</option>
+                    </select>
+                </td>
+                <td>
+                    <textarea class="Observaciones" rows ="3" placeholder = "Observaciones"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td><img src="img/photowhoman.png" style="width: 80px;"></td>
+                <td>23888000</td>
+                <td>LAURA BEATRIZ CRUZ PAREDES</td>
+                <td>INGENIERIA DE SISTEMAS E INFORMATICA</td>
+                <td>P</td>
+                <td>P</td>
+                <td>987654321</td>
+                <td>laucruz@gmail.com</td>
+                <td>
+                    <select class="Opciones">
+                        <option value="Seleccionar" disabled selected>Seleccionar</option>
+                        <option value="Asistencia">Asistencia</option>
+                        <option value="Inasistencia">Inasistencia</option>
+                        <option value="Tardanza">Tardanza</option>
+                        <option value="Falto">Falto</option>
+                    </select>
+                </td>
+                <td>
+                    <textarea class="Observaciones" rows ="3" placeholder = "Observaciones"></textarea>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
